@@ -1,0 +1,142 @@
+ScopeTable with ID# 1 created
+Inserted < b : c > in ScopeTable# 1 at position 2, 0
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> 
+2 --> < b : c >
+--------------------
+Could not delete < d >: Symbol nonexistent
+Could not delete < c >: Symbol nonexistent
+Could not delete < a >: Symbol nonexistent
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> 
+2 --> < b : c >
+--------------------
+ScopeTable with ID# 1.1 created
+Inserted < b : b > in ScopeTable# 1.1 at position 2, 0
+Destroying ScopeTable# 1.1
+Could not find < d >
+Could not delete < d >: Symbol nonexistent
+Inserted < c : a > in ScopeTable# 1 at position 0, 0
+Inserted < d : c > in ScopeTable# 1 at position 1, 0
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : c >
+2 --> < b : c >
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : c >
+2 --> < b : c >
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : c >
+2 --> < b : c >
+--------------------
+Deleted < d : c > in ScopeTable# 1 at position 1, 0
+Could not delete < d >: Symbol nonexistent
+Could not delete < d >: Symbol nonexistent
+Could not delete < d >: Symbol nonexistent
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> 
+2 --> < b : c >
+--------------------
+Inserted < d : d > in ScopeTable# 1 at position 1, 0
+< b : c > already exists in ScopeTable# 1 at position 2, 0
+Found < d : d > in ScopeTable# 1 at position 1, 0
+ScopeTable with ID# 1.2 created
+Inserted < c : b > in ScopeTable# 1.2 at position 0, 0
+ScopeTable# 1.2
+--------------------
+0 --> < c : b >
+1 --> 
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+Could not delete < d >: Symbol nonexistent
+Inserted < d : a > in ScopeTable# 1.2 at position 1, 0
+Could not delete < a >: Symbol nonexistent
+ScopeTable# 1.2
+--------------------
+0 --> < c : b >
+1 --> < d : a >
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+Could not delete < a >: Symbol nonexistent
+Could not find < a >
+Deleted < c : b > in ScopeTable# 1.2 at position 0, 0
+ScopeTable# 1.2
+--------------------
+0 --> 
+1 --> < d : a >
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+Found < c : a > in ScopeTable# 1 at position 0, 0
+< d : a > already exists in ScopeTable# 1.2 at position 1, 0
+Could not delete < a >: Symbol nonexistent
+ScopeTable# 1.2
+--------------------
+0 --> 
+1 --> < d : a >
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+Inserted < c : c > in ScopeTable# 1.2 at position 0, 0
+ScopeTable# 1.2
+--------------------
+0 --> < c : c >
+1 --> < d : a >
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+ScopeTable# 1.2
+--------------------
+0 --> < c : c >
+1 --> < d : a >
+2 --> 
+--------------------
+ScopeTable# 1
+--------------------
+0 --> < c : a >
+1 --> < d : d >
+2 --> < b : c >
+--------------------
+Inserted < b : a > in ScopeTable# 1.2 at position 2, 0
+Destroying ScopeTable# 1.2
+Destroying ScopeTable# 1

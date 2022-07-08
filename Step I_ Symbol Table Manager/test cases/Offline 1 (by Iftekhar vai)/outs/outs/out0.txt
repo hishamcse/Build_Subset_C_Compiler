@@ -1,0 +1,71 @@
+ScopeTable with ID# 1 created
+Inserted < a : a > in ScopeTable# 1 at position 1, 0
+Inserted < c : c > in ScopeTable# 1 at position 1, 1
+Inserted < e : e > in ScopeTable# 1 at position 1, 2
+Inserted < g : g > in ScopeTable# 1 at position 1, 3
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< c : c >< e : e >< g : g >
+--------------------
+Deleted < c : c > in ScopeTable# 1 at position 1, 1
+Inserted < i : i > in ScopeTable# 1 at position 1, 3
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< e : e >< g : g >< i : i >
+--------------------
+ScopeTable with ID# 1.1 created
+Inserted < a : a > in ScopeTable# 1.1 at position 1, 0
+Inserted < b : b > in ScopeTable# 1.1 at position 0, 0
+Inserted < c : c > in ScopeTable# 1.1 at position 1, 1
+Inserted < d : d > in ScopeTable# 1.1 at position 0, 1
+Inserted < e : e > in ScopeTable# 1.1 at position 1, 2
+ScopeTable# 1.1
+--------------------
+0 --> < b : b >< d : d >
+1 --> < a : a >< c : c >< e : e >
+--------------------
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< e : e >< g : g >< i : i >
+--------------------
+Deleted < a : a > in ScopeTable# 1.1 at position 1, 0
+ScopeTable# 1.1
+--------------------
+0 --> < b : b >< d : d >
+1 --> < c : c >< e : e >
+--------------------
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< e : e >< g : g >< i : i >
+--------------------
+Found < a : a > in ScopeTable# 1 at position 1, 0
+Destroying ScopeTable# 1.1
+ScopeTable with ID# 1.2 created
+Inserted < g : g > in ScopeTable# 1.2 at position 1, 0
+Inserted < e : e > in ScopeTable# 1.2 at position 1, 1
+Found < e : e > in ScopeTable# 1.2 at position 1, 1
+Deleted < e : e > in ScopeTable# 1.2 at position 1, 1
+Found < e : e > in ScopeTable# 1 at position 1, 1
+ScopeTable# 1.2
+--------------------
+0 --> 
+1 --> < g : g >
+--------------------
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< e : e >< g : g >< i : i >
+--------------------
+Could not delete < e >: Symbol nonexistent
+Destroying ScopeTable# 1.2
+Deleted < e : e > in ScopeTable# 1 at position 1, 1
+ScopeTable# 1
+--------------------
+0 --> 
+1 --> < a : a >< g : g >< i : i >
+--------------------
+Destroying ScopeTable# 1
