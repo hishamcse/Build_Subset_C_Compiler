@@ -1,0 +1,590 @@
+Error at line 7 : Multiple declaration of d
+
+Error at line 8 : Multiple declaration of c
+
+Error at line 8 : Multiple declaration of f
+
+Error at line 19 : Undeclared function func8
+
+Error at line 20 : Undeclared function func8
+
+Error at line 21 : Undeclared variable m
+
+Error at line 21 : Undeclared variable m
+
+Error at line 21 : Undeclared function func8
+
+Error at line 30 : warning: ‘return’ with a value, in function returning void
+
+Error at line 66 : Non-Integer operand on modulus operator
+
+Error at line 100 : Multiple declaration of a
+
+Error at line 100 : Multiple declaration of b
+
+Error at line 101 : Multiple declaration of b
+
+Error at line 141 : Total number of arguments mismatch with declaration in function func10
+
+Error at line 145 : func11 parameter type error
+
+Error at line 150 : Function return type error
+
+Error at line 153 : Multiple declaration of b in parameter
+
+Error at line 153 : Multiple declaration of a in parameter
+
+Error at line 154 : Undeclared variable m
+
+Error at line 155 : Undeclared variable m
+
+Error at line 156 : Undeclared variable m
+
+Error at line 157 : Undeclared variable m
+
+Error at line 159 : Void function used in expression
+
+Error at line 164 : Return type mismatch with function declaration in function func14
+
+Error at line 168 : Multiple declaration of func14
+
+Error at line 172 : Multiple declaration of func14
+
+Error at line 172 : Return type mismatch with function declaration in function func14
+
+Error at line 176 : Multiple declaration of b in parameter
+
+Error at line 176 : Multiple declaration of func14
+
+Error at line 176 : Total number of arguments mismatch with declaration in function func14
+
+Error at line 177 : Function return type error
+
+Error at line 180 : Multiple declaration of func13
+
+Error at line 192 : func16 parameter type error
+
+Error at line 193 : Function return type error
+
+Error at line 199 : Multiple declaration of a
+
+Error at line 200 : Multiple declaration of a
+
+Error at line 200 : Variable type cannot be void
+
+Error at line 203 : Multiple declaration of b
+
+Error at line 204 : Multiple declaration of b
+
+Error at line 204 : Variable type cannot be void
+
+Error at line 206 : Variable type cannot be void
+
+Error at line 208 : Multiple declaration of c
+
+Error at line 278 : Type Mismatch
+
+Error at line 288 : Type Mismatch
+
+Error at line 291 : Variable type cannot be void
+
+Error at line 294 : Variable type cannot be void
+
+Error at line 297 : Type Mismatch
+
+Error at line 299 : Type Mismatch
+
+Error at line 300 : Type Mismatch
+
+Error at line 306 : Variable type cannot be void
+
+Error at line 309 : Type Mismatch
+
+Error at line 313 : Type Mismatch
+
+Error at line 320 : Undeclared variable arr4 [ 1 ]
+
+Error at line 321 : Undeclared variable arr4 [ 2 ]
+
+Error at line 322 : Undeclared variable arr4 [ 50 ]
+
+Error at line 328 : Type Mismatch
+
+Error at line 329 : Type Mismatch
+
+Error at line 330 : Undeclared variable arr4 [ 1 ]
+
+Error at line 331 : Undeclared variable arr4 [ 2 ]
+
+Error at line 339 : Undeclared variable arr4 [ 1 ]
+
+Error at line 340 : Undeclared variable arr4 [ 2 ]
+
+Error at line 346 : Type Mismatch
+
+Error at line 347 : Type Mismatch
+
+Error at line 348 : Undeclared variable arr4 [ 1 ]
+
+Error at line 349 : Undeclared variable arr4 [ 2 ]
+
+Error at line 353 : Type Mismatch
+
+Error at line 354 : Undeclared variable arr4 [ 1 ]
+
+Error at line 358 : Type Mismatch
+
+Error at line 359 : Undeclared variable arr4 [ 1 ]
+
+Error at line 364 : Undeclared variable arr4 [ 1 ]
+
+Error at line 366 : Undeclared variable arr4 [ 1 ]
+
+Error at line 367 : Undeclared variable arr4 [ 1 ]
+
+Error at line 368 : Undeclared variable arr4 [ 1 ]
+
+Error at line 369 : Undeclared variable arr4 [ 1 ]
+
+Error at line 369 : Undeclared variable arr4 [ 1 ]
+
+Error at line 372 : Non-Integer operand on modulus operator
+
+Error at line 373 : Non-Integer operand on modulus operator
+
+Error at line 374 : Non-Integer operand on modulus operator
+
+Error at line 377 : Non-Integer operand on modulus operator
+
+Error at line 378 : Non-Integer operand on modulus operator
+
+Error at line 379 : Non-Integer operand on modulus operator
+
+Error at line 382 : Non-Integer operand on modulus operator
+
+Error at line 383 : Non-Integer operand on modulus operator
+
+Error at line 384 : Non-Integer operand on modulus operator
+
+Error at line 387 : Non-Integer operand on modulus operator
+
+Error at line 388 : Non-Integer operand on modulus operator
+
+Error at line 389 : Non-Integer operand on modulus operator
+
+Error at line 419 : Type Mismatch
+
+Error at line 420 : Type Mismatch
+
+Error at line 421 : Type Mismatch
+
+Error at line 422 : Type Mismatch
+
+Error at line 423 : Type Mismatch
+
+Error at line 424 : Type Mismatch
+
+Error at line 425 : Type Mismatch
+
+Error at line 426 : Type Mismatch
+
+Error at line 427 : Type Mismatch
+
+Error at line 428 : Type Mismatch
+
+Error at line 429 : Type Mismatch
+
+Error at line 430 : Type Mismatch
+
+Error at line 431 : Type Mismatch
+
+Error at line 432 : Type Mismatch
+
+Error at line 433 : Type Mismatch
+
+Error at line 434 : Type Mismatch
+
+Error at line 436 : Expression inside third brackets not an integer
+
+Error at line 437 : Expression inside third brackets not an integer
+
+Error at line 438 : Expression inside third brackets not an integer
+
+Error at line 439 : Expression inside third brackets not an integer
+
+Error at line 440 : Expression inside third brackets not an integer
+
+Error at line 441 : Expression inside third brackets not an integer
+
+Error at line 442 : Expression inside third brackets not an integer
+
+Error at line 443 : Expression inside third brackets not an integer
+
+Error at line 444 : Expression inside third brackets not an integer
+
+Error at line 445 : Expression inside third brackets not an integer
+
+Error at line 446 : Expression inside third brackets not an integer
+
+Error at line 447 : Expression inside third brackets not an integer
+
+Error at line 448 : Expression inside third brackets not an integer
+
+Error at line 449 : Expression inside third brackets not an integer
+
+Error at line 450 : Expression inside third brackets not an integer
+
+Error at line 451 : Expression inside third brackets not an integer
+
+Error at line 453 : Expression inside third brackets not an integer
+
+Error at line 453 : Type Mismatch
+
+Error at line 454 : Expression inside third brackets not an integer
+
+Error at line 454 : Type Mismatch
+
+Error at line 455 : Expression inside third brackets not an integer
+
+Error at line 455 : Type Mismatch
+
+Error at line 456 : Expression inside third brackets not an integer
+
+Error at line 456 : Type Mismatch
+
+Error at line 457 : Expression inside third brackets not an integer
+
+Error at line 457 : Type Mismatch
+
+Error at line 458 : Expression inside third brackets not an integer
+
+Error at line 458 : Type Mismatch
+
+Error at line 459 : Expression inside third brackets not an integer
+
+Error at line 459 : Type Mismatch
+
+Error at line 460 : Expression inside third brackets not an integer
+
+Error at line 460 : Type Mismatch
+
+Error at line 461 : Expression inside third brackets not an integer
+
+Error at line 461 : Type Mismatch
+
+Error at line 462 : Expression inside third brackets not an integer
+
+Error at line 462 : Type Mismatch
+
+Error at line 463 : Expression inside third brackets not an integer
+
+Error at line 463 : Type Mismatch
+
+Error at line 464 : Expression inside third brackets not an integer
+
+Error at line 464 : Type Mismatch
+
+Error at line 465 : Expression inside third brackets not an integer
+
+Error at line 465 : Type Mismatch
+
+Error at line 466 : Expression inside third brackets not an integer
+
+Error at line 466 : Type Mismatch
+
+Error at line 467 : Expression inside third brackets not an integer
+
+Error at line 467 : Type Mismatch
+
+Error at line 468 : Expression inside third brackets not an integer
+
+Error at line 468 : Type Mismatch
+
+Error at line 475 : Type Mismatch
+
+Error at line 476 : Type Mismatch
+
+Error at line 477 : Type Mismatch
+
+Error at line 478 : Type Mismatch
+
+Error at line 479 : Type Mismatch
+
+Error at line 480 : Type Mismatch
+
+Error at line 481 : Type Mismatch
+
+Error at line 482 : Type Mismatch
+
+Error at line 483 : Type Mismatch
+
+Error at line 484 : Type Mismatch
+
+Error at line 485 : Type Mismatch
+
+Error at line 486 : Type Mismatch
+
+Error at line 487 : Type Mismatch
+
+Error at line 488 : Type Mismatch
+
+Error at line 489 : Type Mismatch
+
+Error at line 490 : Type Mismatch
+
+Error at line 492 : Expression inside third brackets not an integer
+
+Error at line 493 : Expression inside third brackets not an integer
+
+Error at line 494 : Expression inside third brackets not an integer
+
+Error at line 495 : Expression inside third brackets not an integer
+
+Error at line 496 : Expression inside third brackets not an integer
+
+Error at line 497 : Expression inside third brackets not an integer
+
+Error at line 498 : Expression inside third brackets not an integer
+
+Error at line 499 : Expression inside third brackets not an integer
+
+Error at line 500 : Expression inside third brackets not an integer
+
+Error at line 501 : Expression inside third brackets not an integer
+
+Error at line 502 : Expression inside third brackets not an integer
+
+Error at line 503 : Expression inside third brackets not an integer
+
+Error at line 504 : Expression inside third brackets not an integer
+
+Error at line 505 : Expression inside third brackets not an integer
+
+Error at line 506 : Expression inside third brackets not an integer
+
+Error at line 507 : Expression inside third brackets not an integer
+
+Error at line 509 : Type mismatch, arr1 is an array
+
+Error at line 510 : Type mismatch, arr1 is an array
+
+Error at line 510 : Type Mismatch
+
+Error at line 512 : a not an array
+
+Error at line 513 : a not an array
+
+Error at line 513 : Type Mismatch
+
+Error at line 559 : Expression inside third brackets not an integer
+
+Error at line 560 : Expression inside third brackets not an integer
+
+Error at line 561 : Expression inside third brackets not an integer
+
+Error at line 562 : Expression inside third brackets not an integer
+
+Error at line 563 : Expression inside third brackets not an integer
+
+Error at line 564 : Expression inside third brackets not an integer
+
+Error at line 565 : Expression inside third brackets not an integer
+
+Error at line 566 : Expression inside third brackets not an integer
+
+Error at line 567 : Expression inside third brackets not an integer
+
+Error at line 568 : Expression inside third brackets not an integer
+
+Error at line 569 : Expression inside third brackets not an integer
+
+Error at line 570 : Expression inside third brackets not an integer
+
+Error at line 571 : Expression inside third brackets not an integer
+
+Error at line 572 : Expression inside third brackets not an integer
+
+Error at line 573 : Expression inside third brackets not an integer
+
+Error at line 574 : Expression inside third brackets not an integer
+
+Error at line 576 : Expression inside third brackets not an integer
+
+Error at line 577 : Expression inside third brackets not an integer
+
+Error at line 578 : Expression inside third brackets not an integer
+
+Error at line 579 : Expression inside third brackets not an integer
+
+Error at line 580 : Expression inside third brackets not an integer
+
+Error at line 581 : Expression inside third brackets not an integer
+
+Error at line 582 : Expression inside third brackets not an integer
+
+Error at line 583 : Expression inside third brackets not an integer
+
+Error at line 584 : Expression inside third brackets not an integer
+
+Error at line 585 : Expression inside third brackets not an integer
+
+Error at line 586 : Expression inside third brackets not an integer
+
+Error at line 587 : Expression inside third brackets not an integer
+
+Error at line 588 : Expression inside third brackets not an integer
+
+Error at line 589 : Expression inside third brackets not an integer
+
+Error at line 590 : Expression inside third brackets not an integer
+
+Error at line 591 : Expression inside third brackets not an integer
+
+Error at line 615 : Expression inside third brackets not an integer
+
+Error at line 616 : Expression inside third brackets not an integer
+
+Error at line 617 : Expression inside third brackets not an integer
+
+Error at line 618 : Expression inside third brackets not an integer
+
+Error at line 619 : Expression inside third brackets not an integer
+
+Error at line 620 : Expression inside third brackets not an integer
+
+Error at line 621 : Expression inside third brackets not an integer
+
+Error at line 622 : Expression inside third brackets not an integer
+
+Error at line 623 : Expression inside third brackets not an integer
+
+Error at line 624 : Expression inside third brackets not an integer
+
+Error at line 625 : Expression inside third brackets not an integer
+
+Error at line 626 : Expression inside third brackets not an integer
+
+Error at line 627 : Expression inside third brackets not an integer
+
+Error at line 628 : Expression inside third brackets not an integer
+
+Error at line 629 : Expression inside third brackets not an integer
+
+Error at line 630 : Expression inside third brackets not an integer
+
+Error at line 632 : Type mismatch, arr1 is an array
+
+Error at line 633 : Type mismatch, arr1 is an array
+
+Error at line 635 : a not an array
+
+Error at line 636 : a not an array
+
+Error at line 636 : Type Mismatch
+
+Error at line 646 : Type Mismatch
+
+Error at line 647 : Void function used in expression
+
+Error at line 652 : Void function used in expression
+
+Error at line 655 : 2th argument mismatch in function func4
+
+Error at line 656 : 1th argument mismatch in function func4
+
+Error at line 657 : 1th argument mismatch in function func4
+
+Error at line 659 : Total number of arguments mismatch in function func4
+
+Error at line 660 : Total number of arguments mismatch in function func4
+
+Error at line 661 : Total number of arguments mismatch in function func4
+
+Error at line 661 : 2th argument mismatch in function func4
+
+Error at line 662 : Total number of arguments mismatch in function func4
+
+Error at line 662 : 1th argument mismatch in function func4
+
+Error at line 663 : Total number of arguments mismatch in function func4
+
+Error at line 663 : 1th argument mismatch in function func4
+
+Error at line 666 : 2th argument mismatch in function func4
+
+Error at line 667 : 1th argument mismatch in function func4
+
+Error at line 668 : 1th argument mismatch in function func4
+
+Error at line 671 : 2th argument mismatch in function func4
+
+Error at line 675 : Total number of arguments mismatch in function func4
+
+Error at line 676 : Total number of arguments mismatch in function func4
+
+Error at line 677 : Total number of arguments mismatch in function func4
+
+Error at line 677 : 2th argument mismatch in function func4
+
+Error at line 678 : Total number of arguments mismatch in function func4
+
+Error at line 678 : 1th argument mismatch in function func4
+
+Error at line 679 : Total number of arguments mismatch in function func4
+
+Error at line 679 : 1th argument mismatch in function func4
+
+Error at line 681 : 2th argument mismatch in function func4
+
+Error at line 682 : 1th argument mismatch in function func4
+
+Error at line 683 : Non-Integer operand on modulus operator
+
+Error at line 688 : 1th argument mismatch in function func5
+
+Error at line 692 : 1th argument mismatch in function func5
+
+Error at line 697 : Void function used in expression
+
+Error at line 698 : Void function used in expression
+
+Error at line 701 : 1th argument mismatch in function func14
+
+Error at line 702 : Total number of arguments mismatch in function func14
+
+Error at line 703 : Total number of arguments mismatch in function func14
+
+Error at line 704 : Total number of arguments mismatch in function func14
+
+Error at line 704 : 1th argument mismatch in function func14
+
+Error at line 705 : Total number of arguments mismatch in function func14
+
+Error at line 705 : 1th argument mismatch in function func14
+
+Error at line 708 : 1th argument mismatch in function func14
+
+Error at line 709 : Total number of arguments mismatch in function func14
+
+Error at line 710 : Total number of arguments mismatch in function func14
+
+Error at line 711 : Total number of arguments mismatch in function func14
+
+Error at line 711 : 1th argument mismatch in function func14
+
+Error at line 712 : Total number of arguments mismatch in function func14
+
+Error at line 712 : 1th argument mismatch in function func14
+
+Error at line 722 : Void function used in expression
+
+Error at line 724 : Void function used in expression
+
+Error at line 725 : Void function used in expression
+
+Error at line 726 : Total number of arguments mismatch in function func4
+
+Error at line 726 : Total number of arguments mismatch in function func6
+
+Error at line 726 : Void function used in expression
+
