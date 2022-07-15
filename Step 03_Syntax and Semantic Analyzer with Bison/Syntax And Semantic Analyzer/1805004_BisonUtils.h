@@ -41,7 +41,8 @@ OutputUtil outputError(cout, errorOut);
 parameter param;
 vector <parameter> param_list;
 set <string> processed_functions;
-string functionPointer, typePointer, varType;
+vector <string> funcPointers;
+string typePointer, varType;
 
 void yyerror(const char *str) {
     error_count++;
@@ -189,6 +190,18 @@ void print_inconsistent_func_call_error() {
     outputError << "Error at line " << line_count << ": Inconsistent function definition and declaration parameter list" << '\n' << '\n';
 }
 
+void print_invalid_operand_LOGICOP_error() {
+    error_count++;
+    outputLog << "Error at line " << line_count << ": Non-Integer operand on Logic operator" << '\n' << '\n';
+    outputError << "Error at line " << line_count << ": Non-Integer operand on Logic operator" << '\n' << '\n';
+}
+
+void print_invalid_operand_RELOP_error() {
+    error_count++;
+    outputLog << "Error at line " << line_count << ": Non-Integer operand on Relational operator" << '\n' << '\n';
+    outputError << "Error at line " << line_count << ": Non-Integer operand on Relational operator" << '\n' << '\n';
+}
+
 /*-------------------------------------------------- Utility Functions ----------------------------------------------*/
 
 void addToParamListWithID(string idName, string idType, string typeSpecifier) {
@@ -208,7 +221,7 @@ void addToParamListWithoutID(string typeSpecifierName, string typeSpecifierType)
 }
 
 int param_equal(parameter p1, parameter p2) {
-    if(p1.paramName == p2.paramName && p1.paramType == p2.paramType && p1.p_speciesType == p2.p_speciesType && p1.p_returnType == p2.p_returnType) {
+    if(p1.paramType == p2.paramType && p1.p_speciesType == p2.p_speciesType && p1.p_returnType == p2.p_returnType) {
         return 1;
     }
     return 0;
@@ -247,7 +260,7 @@ void process_unit_func_definition(string str) {
 }
 
 void process_func_declaration_with_params(string func_name, string returnType) {
-    functionPointer = func_name;
+    funcPointers.push_back(func_name);
     if (symbolTable.lookUpSymbol(func_name)) {
         print_multiple_dec_error(func_name);
         return;
@@ -272,7 +285,7 @@ void process_func_declaration_first(string str, string funcName) {
 }
 
 void process_func_declaration_without_params(string func_name, string returnType) {
-    functionPointer = func_name;
+    funcPointers.push_back(func_name);
     if (symbolTable.lookUpSymbol(func_name)) {
         print_multiple_dec_error(func_name);
         return;
@@ -291,7 +304,7 @@ void process_func_declaration_second(string str, string funcName) {
 }
 
 void process_func_definition_with_params(string func_name, string returnType) {
-    functionPointer = func_name;
+    funcPointers.push_back(func_name);
     if(symbolTable.getCurrentScopeId() != "1") print_invalid_scope_error(func_name);
     SymbolInfo *found = symbolTable.lookUpSymbol(func_name);
 
@@ -345,11 +358,11 @@ void process_func_definition_with_params(string func_name, string returnType) {
 void process_func_definition_first(string str) {
     print_rule("func_definition : type_specifier ID LPAREN parameter_list RPAREN compound_statement");
     print_code(str);
-    processed_functions.insert(functionPointer);
+    processed_functions.insert(funcPointers.back());
 }
 
 void process_func_definition_without_params(string func_name, string returnType) {
-    functionPointer = func_name;
+    funcPointers.push_back(func_name);
     if(symbolTable.getCurrentScopeId() != "1") print_invalid_scope_error(func_name);
     SymbolInfo *found = symbolTable.lookUpSymbol(func_name);
     if (found) {
@@ -380,7 +393,7 @@ void process_func_definition_without_params(string func_name, string returnType)
 void process_func_definition_second(string str) {
     print_rule("func_definition : type_specifier ID LPAREN RPAREN compound_statement");
     print_code(str);
-    processed_functions.insert(functionPointer);
+    processed_functions.insert(funcPointers.back());
 }
 
 void process_parameter_list_first(string str, string idName, string idType, string typeSpecifier) {
@@ -419,11 +432,13 @@ void process_parameter_list_fourth(string str, string typeSpecifierName, string 
 void process_compound_statement_first(string str) {
     print_rule("compound_statement : LCURL statements RCURL");
     print_code(str);
+    if(funcPointers.size() != 0) funcPointers.pop_back();
 }
 
 void process_compound_statement_second(string str) {
     print_rule("compound_statement : LCURL RCURL");
     print_code(str);
+    if(funcPointers.size() != 0) funcPointers.pop_back();
 }
 
 void process_start_scope() {
@@ -521,6 +536,26 @@ void process_statements_statement_second(string str) {
     print_code(str);
 }
 
+void process_statements_statement_third(string str) {
+    print_rule("statements : statements func_declaration");
+    print_code(str);
+}
+
+void process_statements_statement_fourth(string str) {
+    print_rule("statements : statements func_definition");
+    print_code(str);
+}
+
+void process_statements_statement_fifth(string str) {
+    print_rule("statements : func_declaration");
+    print_code(str);
+}
+
+void process_statements_statement_sixth(string str) {
+    print_rule("statements : func_definition");
+    print_code(str);
+}
+
 void process_statement_var_declaration(string str) {
     print_rule("statement : var_declaration");
     print_code(str);
@@ -565,7 +600,7 @@ void process_statement_println(string str, string idName) {
 void process_statement_return(string str, string expr_type) {
     print_rule("statement : RETURN expression SEMICOLON");
 
-    SymbolInfo *info = symbolTable.lookUpSymbol(functionPointer);
+    SymbolInfo *info = symbolTable.lookUpSymbol(funcPointers.back());
     if(info) {
         if (info->getReturnType() == "void") {
             print_void_return_error();
@@ -624,6 +659,7 @@ void process_logic_expression_first(string str) {
 void process_logic_expression_second(string str, string rel_expr_type1, string rel_expr_type2) {
     print_rule("logic_expression : rel_expression LOGICOP rel_expression");
     if(rel_expr_type1 == "void" || rel_expr_type2 == "void") print_void_return_error();
+//    else if(rel_expr_type1 != "int" || rel_expr_type2 != "int") print_invalid_operand_LOGICOP_error();
     print_code(str);
 }
 
@@ -635,6 +671,7 @@ void process_rel_expression_first(string str) {
 void process_rel_expression_second(string str, string simple_expr_type1, string simple_expr_type2) {
     print_rule("rel_expression : simple_expression RELOP simple_expression");
     if(simple_expr_type1 == "void" || simple_expr_type2 == "void") print_void_return_error();
+//    else if(simple_expr_type1 != "int" || simple_expr_type2 != "int") print_invalid_operand_RELOP_error();
     print_code(str);
 }
 

@@ -185,6 +185,7 @@ compound_statement : LCURL start_scope statements RCURL
 			$$ = new SymbolInfo(str, "NON-TERMINAL");
 			symbolTable.print_allScopeTables();
 			symbolTable.exitScope();
+			if(symbolTable.getCurrentScopeId() == "1") funcPointers.clear();
 		}
  		| LCURL start_scope RCURL
 		{
@@ -193,6 +194,7 @@ compound_statement : LCURL start_scope statements RCURL
 			$$ = new SymbolInfo(str, "NON-TERMINAL");
 			symbolTable.print_allScopeTables();
 			symbolTable.exitScope();
+			if(symbolTable.getCurrentScopeId() == "1") funcPointers.clear();
 		}
  	    ;
 
@@ -282,6 +284,32 @@ statements : statement
 		    process_statements_statement_second(str);
 			$$ = new SymbolInfo(str, "NON-TERMINAL");
 	    }
+		| statements func_declaration
+		{
+			string str = $1 -> getName() + "" + $2 -> getName();
+			process_statements_statement_third(str);
+			$$ = new SymbolInfo(str, "NON-TERMINAL");
+		}
+		| statements func_definition
+		{
+			string str = $1 -> getName() + "" + $2 -> getName();
+			process_statements_statement_fourth(str);
+			$$ = new SymbolInfo(str, "NON-TERMINAL");
+		}
+		| func_declaration
+		{
+			string str = $1 -> getName();
+			process_statements_statement_fifth(str);
+			$$ = new SymbolInfo(str, "NON-TERMINAL");
+			$$ = $1;
+		}
+		| func_definition
+		{
+			string str = $1 -> getName();
+			process_statements_statement_sixth(str);
+			$$ = new SymbolInfo(str, "NON-TERMINAL");
+			$$ = $1;
+		}
 		| error
 		{
 			$$=new SymbolInfo("", "");
